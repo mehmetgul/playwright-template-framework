@@ -1,4 +1,4 @@
-# Sample Playwright Framework
+# Playwright Template Framework
 
 This is a comprehensive test automation framework built using Playwright for end-to-end (E2E) testing. The framework is structured for scalability and maintainability, supporting advanced reporting and artifact management.
 
@@ -68,11 +68,11 @@ Environment-specific configurations are located in the `config/` directory. Exam
   "username": "devUser",
   "password": "devPassword"
 }
-
+```
 ## Installation
 
 1. Clone the repository:
-   ```bash
+  ```bash
    git clone <repository_url>
    cd playwright-template-framework
    ```
