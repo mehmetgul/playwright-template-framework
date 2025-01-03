@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://ecommerce.yosemiteint.com/prestashop/",
+  "defaultTimeout": 5000,
+  "featureToggle": {
+    "enableFeatureX": true
+  }
+}

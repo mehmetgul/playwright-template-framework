@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                // Target modern JavaScript
+    "module": "commonjs",           // Use CommonJS modules
+    "strict": true,                 // Enable all strict type-checking options
+    "esModuleInterop": true,        // Ensure compatibility with CommonJS
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",             // Output directory for compiled files
+    "rootDir": "./",                // Root directory of source files
+    "resolveJsonModule": true,      // Enable importing JSON files
+    "moduleResolution": "node"     // Use Node.js module resolution
+  },
+  "include": [
+    "src/**/*",                     // Include all TypeScript files in src/
+    "tests/**/*",                   // Include all TypeScript test files
+    "playwright.config.ts"          // Include Playwright configuration
+  ],
+  "exclude": [
+    "node_modules",                 // Exclude dependencies
+    "dist"                          // Exclude compiled files
+  ]
+}

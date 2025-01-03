@@ -1,0 +1,15 @@
+Navigating to: https://ecommerce.yosemiteint.com/prestashop/
+Navigating to: https://ecommerce.yosemiteint.com/prestashop/
+{"level":"info","message":"Navigated to the homepage","timestamp":"2025-01-03T03:41:01.579Z"}
+Filling input at Locator: locator('input[placeholder="Search our catalog"]') with value: Hummingbird
+{"level":"info","message":"Searched for product: Hummingbird","timestamp":"2025-01-03T03:41:01.847Z"}
+Clicking on Locator: locator('.product-title a').first()
+Fetching text content from Locator: locator('.product-title').first()
+{"level":"info","message":"Selected product: Hummingbird printed t-shirt","timestamp":"2025-01-03T03:41:04.709Z"}
+Clicking on Locator: locator('.btn.btn-primary.add-to-cart')
+{"level":"info","message":"Product added to cart successfully","timestamp":"2025-01-03T03:41:04.874Z"}
+Clicking on Locator: locator('button[class=\'btn btn-secondary\']')
+{"level":"info","message":"Returned to shopping","timestamp":"2025-01-03T03:41:08.190Z"}
+Clicking on Locator: getByRole('link', { name: 'Cart' })
+Fetching text content from Locator: locator('.cart-products-count').last()
+{"level":"info","message":"Verified product added to cart","timestamp":"2025-01-03T03:41:09.192Z"}

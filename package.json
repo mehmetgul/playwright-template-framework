@@ -1,0 +1,32 @@
+{
+  "name": "playwright-template-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/faker": "^6.6.11",
+    "@types/node": "^22.10.2",
+    "@types/winston": "^2.4.4",
+    "allure-playwright": "^3.0.7"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "typescript": "^5.7.2",
+    "winston": "^3.17.0"
+  },
+  "scripts": {
+  "clean": "ts-node cleanup.ts",
+  "test": "npm run clean && playwright test --project=Chromium",
+  "test:dev": "npm run clean && ENV=dev playwright test --project=Chromium",
+  "test:staging": "npm run clean && ENV=staging playwright test",
+  "test:prod": "npm run clean && ENV=prod playwright test",
+  "test:all": "npm run test:dev && npm run test:dev && npm run test:prod",
+  "allure:generate": "npx allure generate allure-results --clean -o artifacts/allure/allure-report",
+  "allure:open": "npm run allure:generate && npx allure open artifacts/allure/allure-report",
+  "smoke-test": "npm run clean && playwright test --grep \"@smoke\""
+  }
+}
