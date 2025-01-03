@@ -1,4 +1,4 @@
-# Playwright Template Framework
+# Playwright Framework Template
 
 This is a comprehensive test automation framework built using Playwright for end-to-end (E2E) testing. The framework is structured for scalability and maintainability, supporting advanced reporting and artifact management.
 
